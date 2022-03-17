@@ -24,10 +24,10 @@ use App\Http\Controllers;
 // Route::resource('user', StudentController::class);
 
 Route::get('index','App\Http\Controllers\StudentController@index');
+Route::get('show/{id}','App\Http\Controllers\StudentController@show');
 Route::post('store','App\Http\Controllers\StudentController@store');
 Route::get('edit/{id}','App\Http\Controllers\StudentController@edit');
 Route::post('update/{id}','App\Http\Controllers\StudentController@update');
-Route::post('show/{id}','App\Http\Controllers\StudentController@show');
 
 /*
 
